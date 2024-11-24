@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Parkinsans:wght@300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans", sans-serif;
+}
+
+body {
+    background-color: #9D858D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#container {
+    background-color: #8CABBE;
+    width: 800px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.1);
+}
+
+.botoes {
+    display: flex;
+    gap: 6px; 
+}
+
+.btn {
+    width: 100%;
+    border: none;
+    background-color: #8CABBE;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: 600;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn.active {
+    background-color: #A4BFEB;
+}
+
+.btn:hover {
+    background-color: #A4A8D1;
+}
+
+.conteudo {
+    display: none;
+}
+
+.conteudo.mostrar {
+    display: flex;
+    gap: 14px;
+    background-color: #A4BFEB;
+    border-radius: 0px 0px 8px 8px;
+    padding: 16px;
+}
+
+.img {
+    width: 50%;
+}
